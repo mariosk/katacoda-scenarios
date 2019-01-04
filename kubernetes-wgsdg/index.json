@@ -1,6 +1,15 @@
 {
   "title": "Kubernetes Workshop",
   "description": "Create kubernetes cluster",
+  "backend": {
+	"port": 30000,
+	"imageid": "minikube"
+   },
+   "environment": {
+	"uilayout": "terminal",
+	"hideintro": false,
+	"hidefinish": false
+  },
   "difficulty": "beginner",
   "time": "2 minutes",
   "details": {
@@ -15,12 +24,5 @@
     "finish": {
       "text": "finish.md"
     }
-  },
-  "environment": {
-    "uilayout": "terminal",
-    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nStart Kubernetes using `launch.sh`\u001b[m\r\n"
-  },
-  "backend": {
-    "imageid": "minikube"
   }
 }
